@@ -12,7 +12,16 @@
   }: {
     
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      modules = [./configuration.nix];
+      modules = [
+        ./configuration.nix
+        {
+          nixpkgs.overlays = [
+            (final: prev: {
+              ghostty = nixpkgs-unstable.legacyPackages.${prev.system}.ghostty;
+            })
+          ];
+        }
+      ];
     };
   };
 }
