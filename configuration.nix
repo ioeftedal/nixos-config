@@ -53,6 +53,7 @@
     isNormalUser = true;
     description = "Ivar Eftedal";
     extraGroups = ["networkmanager" "wheel"];
+    shell = pkgs.zsh;
     packages = with pkgs; [];
   };
 
@@ -75,12 +76,13 @@
     killall
     wl-clipboard
     gh
-
+    nerd-fonts.jetbrains-mono
   ];
 
   # programs.sway.enable = true;
   programs.niri.enable = true;
   programs.neovim.enable = true;
+  programs.zsh.enable = true;
 
   xdg.portal = {
     enable = true;
