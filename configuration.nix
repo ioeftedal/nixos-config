@@ -77,6 +77,7 @@
     wl-clipboard
     gh
     nerd-fonts.jetbrains-mono
+    fzf
   ];
 
   # programs.sway.enable = true;
