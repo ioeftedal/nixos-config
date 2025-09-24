@@ -22,6 +22,7 @@
           nixpkgs.overlays = [
             (final: prev: {
               ghostty = nixpkgs-unstable.legacyPackages.${prev.system}.ghostty;
+              git-get = nixpkgs-unstable.legacyPackages.${prev.system}.git-get;
             })
           ];
         }

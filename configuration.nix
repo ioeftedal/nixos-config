@@ -78,6 +78,9 @@
     gh
     nerd-fonts.jetbrains-mono
     fzf
+    tailscale
+    git-get
+    gcc
   ];
 
   # programs.sway.enable = true;
@@ -105,6 +108,7 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  services.tailscale.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
