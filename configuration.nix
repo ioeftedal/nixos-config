@@ -81,12 +81,14 @@
     tailscale
     git-get
     gcc
+    firefox
   ];
 
   # programs.sway.enable = true;
   programs.niri.enable = true;
   programs.neovim.enable = true;
   programs.zsh.enable = true;
+  programs.firefox.enable = true;
 
   xdg.portal = {
     enable = true;
